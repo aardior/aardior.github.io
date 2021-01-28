@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>关于&amp;留言板 | aardior</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="关于&amp;留言板 | aardior">
+  <title>Excel-数据读写 | aardior</title>
+  <meta name="keywords" content=" aardio , Excel ">
+  <meta name="description" content="Excel-数据读写 | aardior">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="关于aardioraardior 是 aardio 爱好者的个人站，这里主要记录与aardio相关的学习笔记。 联系方式 QQ : 97975089 邮箱 : transsion@88.com">
 <meta property="og:type" content="website">
@@ -292,24 +292,43 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-Excel-数据读写" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">关于&amp;留言板</h1>
+        <h1 class="article-title">Excel-数据读写</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="经验心得">经验心得</a> > 
+            
+            <a  data-rel="经验心得&lt;---&gt;Excel">Excel</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color2">aardio</a>
+            
+            <a class="color1">Excel</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-01-29 00:06:02'>2021-01-27 22:50</time>
+            发布时间 : <time class="date" title='最后更新: 2021-01-28 23:49:18'>2021-01-28 13:09</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:38</span>
+        <span>字数:1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -339,7 +358,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Eaardior"><span class="toc-text">关于aardior</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F"><span class="toc-text">联系方式</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E7%94%A8Excel%E7%AE%80%E5%8D%95%E7%A4%BA%E4%BE%8B"><span class="toc-text">调用Excel简单示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#com-excel"><span class="toc-text">com.excel</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wps-et"><span class="toc-text">wps.et</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aardio%E6%93%8D%E4%BD%9CExcel%E8%A1%A8%E6%A0%BC%E6%96%B9%E6%B3%95%E6%B1%87%E6%80%BB"><span class="toc-text">aardio操作Excel表格方法汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E8%BE%B9%E6%A1%86%E7%9A%84%E7%A7%8D%E7%B1%BB"><span class="toc-text">1、边框的种类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E8%AE%BE%E7%BD%AE%E8%BE%B9%E6%A1%86%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%B7%E5%BC%8F"><span class="toc-text">2、设置边框颜色、样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E8%8E%B7%E5%8F%96%E6%9C%89%E6%95%88%E8%A1%8C%E3%80%81%E5%88%97"><span class="toc-text">3、获取有效行、列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E3%80%81%E5%88%86%E9%A1%B5%E7%AC%A6%E6%93%8D%E4%BD%9C%E4%BE%8B%E5%AD%90"><span class="toc-text">4、自动填充、分页符操作例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F"><span class="toc-text">5、设置字体样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E3%80%81%E8%87%AA%E9%80%82%E5%BA%94%E5%88%97%E5%AE%BD"><span class="toc-text">6、自适应列宽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E3%80%81%E9%80%89%E4%B8%AD%E5%8D%95%E5%85%83%E6%A0%BC"><span class="toc-text">7、选中单元格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E3%80%81%E8%B0%83%E7%94%A8%E5%AE%8F"><span class="toc-text">8、调用宏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%E3%80%81%E5%8D%95%E5%85%83%E6%A0%BC%E8%83%8C%E6%99%AF%E8%89%B2%E5%A1%AB%E5%85%85"><span class="toc-text">9、单元格背景色填充</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -355,11 +374,256 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="关于aardior"><a href="#关于aardior" class="headerlink" title="关于aardior"></a>关于aardior</h3><p>aardior 是 aardio 爱好者的个人站，这里主要记录与aardio相关的学习笔记。</p>
-<h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><ul>
-<li>QQ : 97975089</li>
-<li>邮箱 : <a href="mailto:transsion@88.com">transsion@88.com</a></li>
-</ul>
+        <blockquote>
+<p>参考自bbs.aardio.com论坛</p>
+</blockquote>
+<h2 id="调用Excel简单示例"><a href="#调用Excel简单示例" class="headerlink" title="调用Excel简单示例"></a>调用Excel简单示例</h2><h3 id="com-excel"><a href="#com-excel" class="headerlink" title="com.excel"></a>com.excel</h3><pre><code class="aardio">import com.excel;
+import console;
+
+console.log(&quot;请稍候......&quot;)
+var excel = com.excel()
+//excel.Visible = true; //使Excel窗口可见
+excel.alerts = false; //关闭所有操作提示
+
+var book = excel.WorkBooks.Add() //创建工作簿
+//book = excel.Open(&quot;/my.xls&quot;) //打开xls文件
+
+var sheet = excel.ActiveWorkbook.Sheets(1);
+var cell = sheet.Cells(1,1);
+cell.Value2 = &quot;haha&quot;   
+
+console.log( cell.Text )
+excel.Quit(); //退出
+</code></pre>
+<h3 id="wps-et"><a href="#wps-et" class="headerlink" title="wps.et"></a>wps.et</h3><p>新版本wps的类名改为了 Ket.Application，原来是ET.Application</p>
+<pre><code class="aardio">import wps.et;
+import console;
+
+console.log(&quot;请稍候......&quot;)
+var et = wps.et()
+//excel.Visible = true; //使Excel窗口可见
+et.alerts = false; //关闭所有操作提示
+
+var book = et.WorkBooks.Add() //创建工作簿 
+//book = et.Open(&quot;/my.xls&quot;) //打开xls文件
+
+var sheet = et.ActiveWorkbook.Sheets(1);
+var cell = sheet.Cells(1,1);
+cell.Value2 = &quot;haha&quot;   
+
+console.log( cell.Text )
+et.Quit(); //退出 
+</code></pre>
+<h2 id="aardio操作Excel表格方法汇总"><a href="#aardio操作Excel表格方法汇总" class="headerlink" title="aardio操作Excel表格方法汇总"></a>aardio操作Excel表格方法汇总</h2><h3 id="1、边框的种类"><a href="#1、边框的种类" class="headerlink" title="1、边框的种类"></a>1、边框的种类</h3><table>
+<thead>
+<tr>
+<th>xlContinuous</th>
+<th>细实线</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>xlDash</td>
+<td>虚线</td>
+</tr>
+<tr>
+<td>xlDashDot</td>
+<td>虚点线</td>
+</tr>
+<tr>
+<td>xlDashDotDot</td>
+<td>二点点线</td>
+</tr>
+<tr>
+<td>xlDot</td>
+<td>点线</td>
+</tr>
+<tr>
+<td>xlDouble</td>
+<td>二线</td>
+</tr>
+<tr>
+<td>xlSlantDashDot</td>
+<td>斜线</td>
+</tr>
+<tr>
+<td>xlLineStyleNone</td>
+<td>没有</td>
+</tr>
+</tbody></table>
+<p>这些常量值在aardio中com–excel库中有声明。<br> xlDialogFormatCharttype=423;<br> xlDivide=5;<br> xlDoubleOpen=4;<br> xlDoubleQuote=1;<br> xlVerbOpen=2;<br> xlDialogMacroOptions=382;<br> xlDialogTextToColumns=422;<br> xlExcelMenus=1;<br> xlExtended=3;<br> xlDialogGalleryColumn=69;<br> xlFill=5;<br> xlPartialScript=2;<br> xlDialogFillGroup=200;<br> xlDot=-4118;</p>
+<p>excel.Range(“a1:e20”).borders(xlInsideHorizontal).LineStyle=xlDot 直接这样写是不可以的。要写成excel.Range(“a1:e20”).borders(12).LineStyle=-4118</p>
+<table class="t_table" cellspacing="0">
+<tbody>
+<tr>
+<td colspan="2" style="text-align:center">边框的宽度(Weight)</td>
+<td colspan="2" style="text-align:center">边框的种类(LineStyle)</td>
+<td colspan="2" style="text-align:center">边框的位置</td>
+</tr>
+<tr>
+<td>xlHairline</td>
+<td>极细线</td>
+<td>xlContinuous</td>
+<td>实线</td>
+<td>xlEdgeTop</td>
+<td>单元格上端线</td>
+</tr>
+<tr>
+<td>xlThin</td>
+<td>细线</td>
+<td>xlDash</td>
+<td>波浪线</td>
+<td>xlEdgeBottom</td>
+<td>单元格下端线</td>
+</tr>
+<tr>
+<td>xlMedium</td>
+<td>中粗线</td>
+<td>xlDashDot</td>
+<td>虚点线</td>
+<td>xlEdgeLeft</td>
+<td>单元格左端线</td>
+</tr>
+<tr>
+<td>xlThick</td>
+<td>粗线</td>
+<td>xlDashDotDot</td>
+<td>二点线</td>
+<td>xlEdgeRight</td>
+<td>单元格右端线</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>xlDot</td>
+<td>点线</td>
+<td>xlInsideHorizontal</td>
+<td>单元格内側的水平线</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>xlDouble</td>
+<td>二重线</td>
+<td>xlInsideVertical</td>
+<td>单元格内側的垂直线</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>xlSlantDashDot</td>
+<td>斜点线</td>
+<td>xlDiagonalDown</td>
+<td>左上到右下的斜线</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>xlLineStyleNone</td>
+<td>没有线</td>
+<td>xlDiagonalUp</td>
+<td>左下到右上斜线</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="2、设置边框颜色、样式"><a href="#2、设置边框颜色、样式" class="headerlink" title="2、设置边框颜色、样式"></a>2、设置边框颜色、样式</h3><pre><code class="aardio">import wps.et;
+
+var excel = wps.et(false)
+excel.Visible = true;
+var book = excel.ActiveWorkbook;
+var sheets = book.sheets(1)
+import gdi
+//实用哪个库中的对像就要先导入哪个库  
+excel.Range(&quot;a1&quot;).Borders.color= gdi.RGB(255,0,0)
+excel.Range(&quot;a3&quot;).Borders.color= gdi.RGB(0,0,0)
+excel.Range(&quot;a5&quot;).Borders.color=0xFF0000
+excel.Range(&quot;a7&quot;).Borders.LineStyle =-4119
+excel.Range(&quot;a9&quot;).Borders(7).LineStyle =-4119
+excel.Range(&quot;a11&quot;).Borders(10).LineStyle =-4119
+</code></pre>
+<p><img src="https://transsion.hangsir.com/wp-content/uploads/2020/12/aardio_excel_demo.png" alt="img"></p>
+<h3 id="3、获取有效行、列"><a href="#3、获取有效行、列" class="headerlink" title="3、获取有效行、列"></a>3、获取有效行、列</h3><p>只要单元格不是默认样式，就会被计算再有效行、列中。</p>
+<pre><code class="aardio">//先打开Excel再运行
+import com.excel;
+import win;
+var excel = com.excel(false)
+excel.Visible = true;
+var book = excel.ActiveWorkbook;
+var sh = book.sheets(1)
+win.msgbox(sh.UsedRange.Rows.Count ,&quot;aardio&quot;)
+win.msgbox(sh.UsedRange.Columns.Count ,&quot;aardio&quot;)
+</code></pre>
+<h3 id="4、自动填充、分页符操作例子"><a href="#4、自动填充、分页符操作例子" class="headerlink" title="4、自动填充、分页符操作例子"></a>4、自动填充、分页符操作例子</h3><pre><code class="aardio">import wps.et;
+
+var excel = wps.et(false)
+excel.Visible = true;
+var book = excel.ActiveWorkbook;
+var sheets = book.sheets(1)
+
+sheets.Cells(1,1).Value2 = &quot;aardio1&quot;;
+sheets.Range(&quot;A1&quot;).AutoFill(sheets.Range(&quot;A1:A20&quot;)); //自动填充20个数据
+
+sheets.HPageBreaks.Add(sheets.Cells(11,1)); //添加水平分页符
+sheets.PrintPreview();
+
+//删除分页符
+sheets.HPageBreaks(1).Delete();  
+</code></pre>
+<h3 id="5、设置字体样式"><a href="#5、设置字体样式" class="headerlink" title="5、设置字体样式"></a>5、设置字体样式</h3><pre><code class="php">import wps.et;
+
+var excel = wps.et(false)
+excel.Visible = true;
+var book = excel.ActiveWorkbook;
+var sheets = book.sheets(1)
+import gdi
+//字体样式
+excel.Range(&quot;A3&quot;).ColorIndex = xlAutomatic
+excel.Range(&quot;A3&quot;).Font.Name = &quot;宋体&quot;
+excel.Range(&quot;A3&quot;).Font.Size = 20
+excel.Range(&quot;A3&quot;).Font.color = 7
+excel.Range(&quot;A3&quot;).Font.Strikethrough = False
+excel.Range(&quot;A3&quot;).Font.Superscript = False
+excel.Range(&quot;A3&quot;).Font.Subscript = False
+excel.Range(&quot;A3&quot;).Font.OutlineFont = False
+excel.Range(&quot;A3&quot;).Font.Shadow = False
+excel.Range(&quot;A3&quot;).Font.Underline =-4119 /*xlUnderlineStyleNone*/
+excel.Range(&quot;A3&quot;).Font.ColorIndex = xlAutomatic
+excel.Range(&quot;A3&quot;).Font.Color = gdi.RGB(128, 0, 0)
+</code></pre>
+<p><img src="https://transsion.hangsir.com/wp-content/uploads/2020/12/aardio_excel_demo2.png" alt="img"></p>
+<h3 id="6、自适应列宽"><a href="#6、自适应列宽" class="headerlink" title="6、自适应列宽"></a>6、自适应列宽</h3><pre><code class="aardio">import wps.et;
+
+var excel = wps.et(false)
+excel.Visible = true;
+var book = excel.ActiveWorkbook;
+var sheets = book.sheets(1)
+//自适应列宽
+sheets.Cells.EntireColumn.AutoFit()
+sheets.Cells.EntireRow.AutoFit()
+
+//自动适应列宽行宽 2。
+sheets.Cells.Columns.AutoFit()
+sheets.Cells.Rows.AutoFit()
+
+sheets.Range( &quot;A1&quot;).HorizontalAlignment =-4108;   //水平居中
+sheets.Range( &quot;A1&quot;).VerticalAlignment =-4108;  //垂直居中
+</code></pre>
+<h3 id="7、选中单元格"><a href="#7、选中单元格" class="headerlink" title="7、选中单元格"></a>7、选中单元格</h3><pre><code class="aardio">import wps.et;
+
+var excel = wps.et(false)
+excel.Visible = true;
+var book = excel.ActiveWorkbook;
+var sheets = book.sheets(1)
+
+//选中单元格
+sheets.Range(&quot;A5&quot;).Select()
+</code></pre>
+<h3 id="8、调用宏"><a href="#8、调用宏" class="headerlink" title="8、调用宏"></a>8、调用宏</h3><pre><code class="aardio">excel = com.CreateObject(&quot;Excel.Application&quot;)
+excel.Run(“宏名字&quot;)
+</code></pre>
+<h3 id="9、单元格背景色填充"><a href="#9、单元格背景色填充" class="headerlink" title="9、单元格背景色填充"></a>9、单元格背景色填充</h3><pre><code class="aardio">sheet1.Cells( 1, 2 ).Interior.Pattern = 1                //填充模式
+sheet1.Cells( 1, 2 ).Interior.ColorIndex = 6        //单元格背景--黄色
+</code></pre>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 transsion@88.com </span>
