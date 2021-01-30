@@ -509,8 +509,8 @@
 .nav-left {
   width: 120px;
   height: 100%;
-  background: #2a2935;
-  box-shadow: inset -15px 0 15px -15px #222;
+  background: #fbfbfb;
+  box-shadow: inset -15px 0 15px -15px #d4d4d4;
   float: left;
   position: relative;
   -webkit-user-select: none;
@@ -1752,18 +1752,18 @@ img.pswp__img {
   position: relative;
   width: 100%;
   padding: 0 20px;
-  background: url("../img/timeline.gif") repeat-y 207px 0;
+  background: url("../img/timeline.gif") repeat-y 90px 0;
   overflow: hidden;
+  box-sizing: border-box;
+  background-position: 97px 0;
 }
 .timeline h2 {
-  height: 44px;
-  line-height: 44px;
-  font-size: 30px;
+  padding-left: 40%;
+  background-position: 48px 1;
   color: #666;
   font-weight: bold;
-  padding-left: 75px;
   margin-bottom: 25px;
-  background: url("../img/timeline-clock.gif") rgba(255,255,255,0) no-repeat 165px 0;
+  background: url("../img/timeline-clock.gif") rgba(255,255,255,0) no-repeat 55px 0;
 }
 .timeline h2 img {
   vertical-align: -5px;
@@ -1775,20 +1775,22 @@ img.pswp__img {
 }
 .timeline ul li {
   background: url("../img/timeline-dot.gif") no-repeat 180px 8px;
-  padding-bottom: 20px;
   zoom: 1;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   display: flex;
   align-items: center;
+  background-position: 70px center;
 }
-/*超出隐藏带省略号*/
-.beyondhidden {
-  width: 155px;
+.timeline ul li img {
+  vertical-align: -5px;
+}
+.beyond-hidden {
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 .timeline ul li:after {
@@ -1800,11 +1802,11 @@ img.pswp__img {
 }
 .timeline ul li h3 {
   float: left;
-  width: 168px;
+  width: 60px;
   font-size: 20px;
   color: #333;
   text-align: right;
-  padding-right: 15px;
+  padding-right: 18px;
   margin: 0;
 }
 .timeline ul li h3 span {
@@ -1813,35 +1815,16 @@ img.pswp__img {
   margin-left: 3px;
 }
 .timeline ul li a {
-  padding-left: 41px;
-  margin-top: -5px;
+  padding-left: 30px;
   font-weight: normal;
   font-size: 16px;
   color: #505050;
   line-height: 32px;
+  box-sizing: border-box;
 }
 .timeline ul li a:hover {
   text-decoration: none;
   color: #e67e22;
-}
-@media screen and (max-width: 500px) {
-  .timebox {
-    background-position: 97px 0;
-  }
-  .timeline h2 {
-    padding-left: 40%;
-    background-position: 48px 1;
-    color: #666;
-    font-weight: bold;
-    margin-bottom: 25px;
-    background: url("../img/timeline-clock.gif") rgba(255,255,255,0) no-repeat 55px 0;
-  }
-  .timeline ul li {
-    background-position: 70px 0;
-  }
-  .timeline ul li h3 {
-    width: 68px;
-  }
 }
 @media screen and (max-width: 1468px) {
   html,

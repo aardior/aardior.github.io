@@ -4,13 +4,31 @@
   
     
     <entry>
-      <title>测试</title>
-      <link href="2021/01/30/%E6%B5%8B%E8%AF%95/"/>
-      <url>2021/01/30/%E6%B5%8B%E8%AF%95/</url>
+      <title>Excel-多线程读写</title>
+      <link href="2021/01/31/Excel-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%AF%BB%E5%86%99/"/>
+      <url>2021/01/31/Excel-%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%AF%BB%E5%86%99/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h3 id="要解决的问题"><a href="#要解决的问题" class="headerlink" title="要解决的问题"></a>要解决的问题</h3><p>有 n 个格式相同的表格文件（.xls、.xlsx），分别由 n 人合作填写内容到表格中的待填项，所有人填写完毕后，将这 n 份文件内容汇总到一份Excel文件中。</p><h3 id="功能实现"><a href="#功能实现" class="headerlink" title="功能实现"></a>功能实现</h3><p>使用线程管理来创建多个线程同步工作，创建新线程时要<strong>传一个参数</strong>给它，作为该<strong>线程的唯一标识</strong>（后面方便统计数据），每个线程在结束时都会把处理的数据传递给<strong>主线程</strong>设置的变量（一个<strong>table变量</strong>），线程的唯一标识作为table的<strong>键</strong>，线程处理的数据作为<strong>值</strong>，最终table数据由主线程来决定如何处理。</p><p>代码如下（Excel文件读写部分省略）：</p><pre><code class="aardio">import thread.managevar results_summary=&#123;&#125;import consolemanage = thread.manage(3)import thread.commanda = thread.command(winform)a.passedToMain=function(i,v)&#123;    results_summary[i] = v&#125;var thrdFunc = function(n)&#123;    for(i=1;10;1)&#123;         import thread.command;        thread.command.passedToMain(n,i)    &#125; &#125;manage.create(thrdFunc,1)manage.create(thrdFunc,2)manage.create(thrdFunc,3)manage.create(thrdFunc,4)manage.waitClose() console.dump(results_summary)console.pause();</code></pre><h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>最初是想使用多线程来提高读写Excel文件的速度，但实际上却并不理想，也许是我写的代码存在问题，或者是电脑硬件方面的限制，不过这都没关系，学到新的知识就足够了。</p>]]></content>
       
       
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+          <category> Excel </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> aardio </tag>
+            
+            <tag> Excel </tag>
+            
+            <tag> 多线程 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -26,7 +44,7 @@
       
       <categories>
           
-          <category> 经验心得 </category>
+          <category> 学习笔记 </category>
           
           <category> Excel </category>
           
