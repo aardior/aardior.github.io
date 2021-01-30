@@ -1774,12 +1774,22 @@ img.pswp__img {
   padding: 0;
 }
 .timeline ul li {
-  background: url("../img/timeline-dot.gif") no-repeat 180px 5px;
+  background: url("../img/timeline-dot.gif") no-repeat 180px 8px;
   padding-bottom: 20px;
   zoom: 1;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+/*超出隐藏带省略号*/
+.beyondhidden {
+  width: 155px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .timeline ul li:after {
   content: " ";
@@ -1808,6 +1818,7 @@ img.pswp__img {
   font-weight: normal;
   font-size: 16px;
   color: #505050;
+  line-height: 32px;
 }
 .timeline ul li a:hover {
   text-decoration: none;
@@ -1819,10 +1830,14 @@ img.pswp__img {
   }
   .timeline h2 {
     padding-left: 40%;
-    background-position: 48px 0;
+    background-position: 48px 1;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 25px;
+    background: url("../img/timeline-clock.gif") rgba(255,255,255,0) no-repeat 55px 0;
   }
   .timeline ul li {
-    background-position: 70px 5px;
+    background-position: 70px 0;
   }
   .timeline ul li h3 {
     width: 68px;
