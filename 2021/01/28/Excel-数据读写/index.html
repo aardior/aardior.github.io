@@ -203,7 +203,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="1">
-<input type="hidden" id="yelog_site_word_count" value="1k">
+<input type="hidden" id="yelog_site_word_count" value="957">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -276,7 +276,7 @@
         </a>
         
         <div id="no-item-tips">
-
+            <center>Hang</center>
         </div>
     </nav>
     <div id="outline-list">
@@ -323,12 +323,12 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-01-28 23:49:18'>2021-01-28 13:09</time>
+            发布时间 : <time class="date" title='最后更新: 2021-01-30 14:01:55'>2021-01-28 13:09</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:1k</span>
+        <span>字数:957</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -431,7 +431,7 @@ et.Quit(); //退出
 </tr>
 <tr>
 <td>xlDashDotDot</td>
-<td>二点点线</td>
+<td>二点线</td>
 </tr>
 <tr>
 <td>xlDot</td>
@@ -439,93 +439,72 @@ et.Quit(); //退出
 </tr>
 <tr>
 <td>xlDouble</td>
-<td>二线</td>
+<td>二重线</td>
 </tr>
 <tr>
 <td>xlSlantDashDot</td>
-<td>斜线</td>
+<td>斜点线</td>
 </tr>
 <tr>
 <td>xlLineStyleNone</td>
-<td>没有</td>
+<td>没有线</td>
 </tr>
 </tbody></table>
-<p>这些常量值在aardio中com–excel库中有声明。<br> xlDialogFormatCharttype=423;<br> xlDivide=5;<br> xlDoubleOpen=4;<br> xlDoubleQuote=1;<br> xlVerbOpen=2;<br> xlDialogMacroOptions=382;<br> xlDialogTextToColumns=422;<br> xlExcelMenus=1;<br> xlExtended=3;<br> xlDialogGalleryColumn=69;<br> xlFill=5;<br> xlPartialScript=2;<br> xlDialogFillGroup=200;<br> xlDot=-4118;</p>
-<p>excel.Range(“a1:e20”).borders(xlInsideHorizontal).LineStyle=xlDot 直接这样写是不可以的。要写成excel.Range(“a1:e20”).borders(12).LineStyle=-4118</p>
-<table class="t_table" cellspacing="0">
-<tbody>
+<p>这些常量值在aardio中com–excel库中有声明。</p>
+<pre><code class="aardio"> xlDialogFormatCharttype=423;
+ xlDivide=5;
+ xlDoubleOpen=4;
+ xlDoubleQuote=1;
+ xlVerbOpen=2;
+ xlDialogMacroOptions=382;
+ xlDialogTextToColumns=422;
+ xlExcelMenus=1;
+ xlExtended=3;
+ xlDialogGalleryColumn=69;
+ xlFill=5;
+ xlPartialScript=2;
+ xlDialogFillGroup=200;
+ xlDot=-4118;
+
+excel.Range(&quot;a1:e20&quot;).borders(xlInsideHorizontal).LineStyle=xlDot 直接这样写是不可以的。要写成excel.Range(&quot;a1:e20&quot;).borders(12).LineStyle=-4118
+</code></pre>
+<p><strong>边框的位置</strong></p>
+<table>
+<thead>
 <tr>
-<td colspan="2" style="text-align:center">边框的宽度(Weight)</td>
-<td colspan="2" style="text-align:center">边框的种类(LineStyle)</td>
-<td colspan="2" style="text-align:center">边框的位置</td>
+<th>xlEdgeTop</th>
+<th>单元格上端线</th>
 </tr>
-<tr>
-<td>xlHairline</td>
-<td>极细线</td>
-<td>xlContinuous</td>
-<td>实线</td>
-<td>xlEdgeTop</td>
-<td>单元格上端线</td>
-</tr>
-<tr>
-<td>xlThin</td>
-<td>细线</td>
-<td>xlDash</td>
-<td>波浪线</td>
+</thead>
+<tbody><tr>
 <td>xlEdgeBottom</td>
 <td>单元格下端线</td>
 </tr>
 <tr>
-<td>xlMedium</td>
-<td>中粗线</td>
-<td>xlDashDot</td>
-<td>虚点线</td>
 <td>xlEdgeLeft</td>
 <td>单元格左端线</td>
 </tr>
 <tr>
-<td>xlThick</td>
-<td>粗线</td>
-<td>xlDashDotDot</td>
-<td>二点线</td>
 <td>xlEdgeRight</td>
 <td>单元格右端线</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>xlDot</td>
-<td>点线</td>
 <td>xlInsideHorizontal</td>
 <td>单元格内側的水平线</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>xlDouble</td>
-<td>二重线</td>
 <td>xlInsideVertical</td>
 <td>单元格内側的垂直线</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>xlSlantDashDot</td>
-<td>斜点线</td>
 <td>xlDiagonalDown</td>
 <td>左上到右下的斜线</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>xlLineStyleNone</td>
-<td>没有线</td>
 <td>xlDiagonalUp</td>
 <td>左下到右上斜线</td>
 </tr>
-</tbody>
-</table>
-
+</tbody></table>
 <h3 id="2、设置边框颜色、样式"><a href="#2、设置边框颜色、样式" class="headerlink" title="2、设置边框颜色、样式"></a>2、设置边框颜色、样式</h3><pre><code class="aardio">import wps.et;
 
 var excel = wps.et(false)
